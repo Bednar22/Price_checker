@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html className='dark' lang='en'>
-            <body className={`${inter.className} bg-dark-mode`}>{children}</body>
+            <body className={`${inter.className} dark:bg-primary-dark`}>{children}</body>
         </html>
     );
 }
