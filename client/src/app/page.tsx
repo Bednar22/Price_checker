@@ -1,13 +1,16 @@
 import AreaChartComponent from '../components/areaChart';
+import FavoritesWrapper from '@/components/mainPage/favorites/favoritesWrapper';
+import ItemsWrapper from '@/components/mainPage/items/itemsWrapper';
 
 export default function Home() {
     return (
-        <main className='min-h-screen'>
-            <div className='h-64'>
+        <main className='flex flex-col w-screen min-h-screen items-center px-8'>
+            {/* <div className='h-64'>
                 <AreaChartComponent />
-            </div>
-
-            <h1 className='dark:text-label-dark'>text</h1>
+            </div> */}
+            <FavoritesWrapper />
+            <ItemsWrapper />
+            {/* <h1 className='dark:text-label-dark'>text</h1> */}
         </main>
     );
 }
